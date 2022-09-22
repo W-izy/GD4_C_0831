@@ -3,9 +3,10 @@ include '../component/sidebar.php'
 ?>
 <div class="container p-3 m-4 h-100"
     style="background-color: #FFFFFF; border-top: 5px solid #D40013; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <div class="body d-flex justify-content-between">
         <h4>LIST MOVIE</h4>
-
+        <p> <a href = "../page/addMoviesPage.php"> <button class="w3-button w3-pink">+</button></a></p>
     </div>
     <hr>
     <table class="table ">
@@ -40,6 +41,10 @@ include '../component/sidebar.php'
                         onClick="return confirm ( \'Are you sure want to delete this data?\')"> 
                         <i style="color: red" class="fa fa-trash fa-2x"></i> 
                         </a>
+                        <a href="./updateMoviesPage.php?id=' . $data['id'] . '"
+                                        onClick="return confirm(\'Yakin mau edit data?\')">
+                                        <i style="color: gray" class="fa fa-edit fa-2x"></i>
+                                    </a>
                     </td>
             </tr>'; 
             $no++; 
