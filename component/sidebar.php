@@ -70,6 +70,9 @@ echo '
                             style="font-weight:600">Dashboard</a> </div>
                     <div class="content-menu "> <i class="fa fa-film"></i> <a href="./listMoviesPage.php"
                             style="font-weight:600">List Movie</a> </div>
+                    <div class="content-menu " >
+                            <i class="fa fa-film"></i><a href="./listSeriesPage.php" 
+                            style="fontweight:600">List Series</a></div>
                     <div class="content-menu "> <i class="fa fa-plus"></i> <a href="./addMoviesPage.php"
                             style="font-weight:600">Add Movies</a> </div>
                     <div class="content-menu "> <i class="fa fa-sign-out"></i> <a href="../process/logoutProcess.php"
